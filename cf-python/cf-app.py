@@ -1,7 +1,8 @@
 """Cloud Foundry test"""
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_file
 import os
 import json
+import requests
 
 app = Flask(__name__)
 
@@ -9,7 +10,7 @@ URL = "http://appd-configuration-server.apps.hiddenhills.cf-app.com/downloads/Ap
 
 @app.route('/')
 def getenv():
-    print("printing appdynamics environment exposed to applicaiton")
+    print("printing appdynamics environment exposed to application")
     appd_env = {"appdynamics_env": { env: os.environ[env] for env in os.environ if env.startswith('APPD')}}
     return jsonify(appd_env)
 

@@ -44,5 +44,5 @@ AppD tile names the download after the url endpoint (forward in this case) and p
    [APPD_BP]       Writing AppDynamics Core CLR profiler environment
    -----> Dotnet-Core Buildpack version 2.3.2
    -----> Supplying Dotnet Core
-   ```
    -----> Installing libunwind 1.3.1
+   ```

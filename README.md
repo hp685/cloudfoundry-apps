@@ -1,3 +1,6 @@
+We need a configuration server that hosts our agent zip files. In addition we need a python flask app that acts as an intermediary proxy to fetch the agent from internal backend. Finally, we push Dotnet app (cf-net-linux) that uses 
+a generic APPD_AGENT_HTTP_URL pointing to our proxy (flask app)
+
 1. Push cf-configuration server using Static Buildpack
 	```
 	$ cd cf-configuration-server

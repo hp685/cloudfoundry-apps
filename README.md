@@ -18,7 +18,7 @@ a generic APPD_AGENT_HTTP_URL pointing to our proxy (flask app)
 
        
        $ cd cf-net-linux
-       $ cf push cf test-generic-endpoint
+       $ cf push test-generic-endpoint
        
 
 Note that flask app request timeouts may need to be modified depending on how long it takes to download from the internal endpoints

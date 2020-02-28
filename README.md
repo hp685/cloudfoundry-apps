@@ -5,12 +5,14 @@
 	```
 
 2. Push Python flask app that hosts the forward endpoint
+
        ```
        $ cd cf-python
        $ cf push cf-python
        ```
 
 3. Push Dotnet app 
+
        ```
        $ cd cf-net-linux
        $ cf push cf test-generic-endpoint

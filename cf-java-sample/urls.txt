@@ -1,3 +1,0 @@
-cf-java-app-1-smart-wombat.cfapps.pie-multi-az-blue.cfplatformeng.com
-cf-java-app-2-responsive-oribi.cfapps.pie-multi-az-blue.cfplatformeng.com
-cf-java-app-3-grumpy-quokka.cfapps.pie-multi-az-blue.cfplatformeng.com

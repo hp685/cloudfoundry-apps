@@ -3,10 +3,8 @@ applications:
 - name: cf-python
   memory: 500M
   buildpacks: 
-    - dev_appd_buildpack
     - python_buildpack
   services:
-    - pcf-appd-instance
+    - appdynamics
   env:
     BP_DEBUG: true
-

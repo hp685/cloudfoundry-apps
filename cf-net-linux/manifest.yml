@@ -1,16 +1,17 @@
 ---
 applications:
-- name: cf-net-linux-ups
+- name: test-generic-endpoint
   random-route: true
   memory: 1G
   buildpacks:
-    - dev_appd_buildpack
+    - appdbuildpack
     - dotnet_core_buildpack
   services:
-    - appd
+    - appdynamics
   env:
     APPD_AGENT: dotnetcore
-    APPD_AGENT_HTTP_URL: http://appd-configuration-server.apps.rome.cf-app.com/downloads/AppDynamics-DotNetCore-linux-x64-4.5.16.0.zip
-    APPD_CONF_HTTP_URL: http://appd-configuration-server.apps.pcf.demo.appdynamics.com/v1/
+    APPD_AGENT_HTTP_URL: http://cf-python.apps.hiddenhills.cf-app.com/forward
+    APPD_CONF_HTTP_URL: http://appd-configuration-server.apps.perris.cf-app.com/v1/
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: 60dbc1a8-043c-44f7-93f8-e18aeb0b8274
